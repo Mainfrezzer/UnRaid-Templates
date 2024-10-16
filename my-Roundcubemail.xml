@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Roundcubemail</Name>
+  <Repository>roundcube/roundcubemail:latest</Repository>
+  <Registry>https://hub.docker.com/r/roundcube/roundcubemail/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/roundcube/roundcubemail-docker</Project>
+  <Overview>Roundcube Mail is an open-source webmail software that offers a user-friendly interface for managing email accounts. &#xD;
+  It features a rich text editor, address book, and supports multiple email protocols, making it a popular choice for individuals and organizations seeking a customizable web-based email solution.&#xD;
+  </Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Roundcube_logo_icon.svg/240px-Roundcube_logo_icon.svg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1728233772</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="www-data" Target="/var/www/html" Default="/mnt/user/appdata/roundcubemail/html" Mode="rw" Description="Path for the webinterface" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/roundcubemail/html</Config>
+  <Config Name="Webgui" Target="80" Default="80" Mode="tcp" Description="Port for the webserver" Type="Port" Display="always" Required="true" Mask="false">9002</Config>
+  <Config Name="Database" Target="/var/roundcube/db" Default="/mnt/user/appdata/roundcubemail/db" Mode="rw" Description="Path for the databank" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/roundcubemail/db</Config>
+  <Config Name="Default Host" Target="ROUNDCUBEMAIL_DEFAULT_HOST" Default="" Mode="" Description=" For encrypted connections, prefix the host with tls:// (STARTTLS) or ssl:// (SSL/TLS)." Type="Variable" Display="always" Required="true" Mask="false">ssl://mail.example.com</Config>
+  <Config Name="Default Port" Target="ROUNDCUBEMAIL_DEFAULT_PORT" Default="" Mode="" Description="IMAP port number; defaults to 143 (993 for ssl)" Type="Variable" Display="always" Required="true" Mask="false">993</Config>
+  <Config Name="SMTP Server" Target="ROUNDCUBEMAIL_SMTP_SERVER" Default="" Mode="" Description="For encrypted connections, prefix the host with tls:// (STARTTLS) or ssl:// (SSL/TLS)." Type="Variable" Display="always" Required="true" Mask="false">ssl://mail.example.com</Config>
+  <Config Name="SMTP Port" Target="ROUNDCUBEMAIL_SMTP_PORT" Default="" Mode="" Description="SMTP port number; defaults to 587 (465 for ssl)" Type="Variable" Display="always" Required="true" Mask="false">465</Config>
+  <Config Name="DB-Type" Target="ROUNDCUBEMAIL_DB_TYPE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">sqlite</Config>
+  <Config Name="Username" Target="ROUNDCUBEMAIL_USERNAME_DOMAIN" Default="" Mode="" Description="Automatically add this domain to user names for login." Type="Variable" Display="always" Required="false" Mask="false">example.com</Config>
+</Container>

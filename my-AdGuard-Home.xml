@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AdGuard-Home</Name>
+  <Repository>mainfrezzer/adguardhome</Repository>
+  <Registry>https://hub.docker.com/r/mainfrezzer/adguardhome</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.1.3</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/profile/201895-mainfrezzer/</Support>
+  <Project>https://github.com/AdguardTeam/AdGuardHome</Project>
+  <Overview>AdGuard Home is a network-wide software for blocking ads &amp;amp; tracking. After you set it up, it&#x2019;ll cover ALL your home devices, and you don&#x2019;t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.</Overview>
+  <Category>Network: Network:DNS</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/adguard_home.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/adguard.png</Icon>
+  <ExtraParams>--hostname=AdGuardHome</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1729104352</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="/opt/adguardhome/work" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/workingdir</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/config</Config>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port of the Web UI" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="WebGUI" Target="80" Default="80" Mode="tcp" Description="WebGUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="DNS Server TCP" Target="53" Default="53" Mode="tcp" Description="TCP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="DNS Server UDP" Target="53" Default="53" Mode="udp" Description="UDP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+</Container>
