@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/profile/201895-mainfrezzer/</Support>
   <Project>https://github.com/AdguardTeam/AdGuardHome</Project>
-  <Overview>AdGuard Home is a network-wide software for blocking ads &amp;amp; tracking. After you set it up, it&#x2019;ll cover ALL your home devices, and you don&#x2019;t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.</Overview>
+  <Overview>AdGuard Home is a network-wide software for blocking ads &amp;amp; tracking. After you set it up, it&#x2019;ll cover ALL your home devices, and you don&#x2019;t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.&#xD;&#xD;This AdGuard Home container includes Unbound. Just set the address to 127.0.0.1:8053 and/or [::1]:8053 to use it.&#xD;&#xD;It will download roothints upon first start and then once weekly.</Overview>
   <Category>Network: Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/adguard_home.xml</TemplateURL>
