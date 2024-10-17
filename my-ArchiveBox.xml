@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ArchiveBox</Name>
+  <Repository>archivebox/archivebox:latest</Repository>
+  <Registry>https://hub.docker.com/r/archivebox/archivebox</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view websites offline.&#xD;
+&#xD;
+Without active preservation effort, everything on the internet eventually disappears or degrades. Archive.org does a great job as a centralized service, but saved URLs have to be public, and they can't save every type of content.&#xD;
+&#xD;
+ArchiveBox is an open source tool that lets organizations &amp;amp; individuals archive both public &amp;amp; private web content while retaining control over their data. It can be used to save copies of bookmarks, preserve evidence for legal cases, backup photos from FB/Insta/Flickr or media from YT/Soundcloud/etc., save research papers, and more...</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/website/icon.png</Icon>
+  <ExtraParams>--dns=10.0.0.3</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1729166984</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Contains the DB and logfiles" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ArchiveBox</Config>
+  <Config Name="Archive Data" Target="/data/archive" Default="" Mode="rw" Description="Contains all the data thats being archived." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SHARE/ArchiveBox</Config>
+  <Config Name="Public Index" Target="PUBLIC_INDEX" Default="" Mode="" Description="set to False to prevent anonymous users from viewing snapshot list" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="Public Snapshots" Target="PUBLIC_SNAPSHOTS" Default="" Mode="" Description="set to False to prevent anonymous users from viewing snapshot content" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="Public Add View" Target="PUBLIC_ADD_VIEW" Default="" Mode="" Description="set to True to allow anonymous users to submit new URLs to archive" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="UID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="GID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="Timeout" Target="TIMEOUT" Default="60" Mode="" Description="increase this number to 120+ seconds if you see many slow downloads timing out" Type="Variable" Display="advanced-hide" Required="false" Mask="false">60</Config>
+  <Config Name="User Agent" Target="CURL_USER_AGENT" Default="" Mode="" Description="set a custom USER_AGENT to avoid being blocked as a bot" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
+</Container>
