@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/website/icon.png</Icon>
-  <ExtraParams>--dns=10.0.0.3</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1729166984</DateInstalled>
@@ -30,5 +30,7 @@
   <Config Name="UID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="GID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
   <Config Name="Timeout" Target="TIMEOUT" Default="60" Mode="" Description="increase this number to 120+ seconds if you see many slow downloads timing out" Type="Variable" Display="advanced-hide" Required="false" Mask="false">60</Config>
-  <Config Name="User Agent" Target="CURL_USER_AGENT" Default="" Mode="" Description="set a custom USER_AGENT to avoid being blocked as a bot" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
+  <Config Name="Curl User Agent" Target="CURL_USER_AGENT" Default="" Mode="" Description="set a custom CURL_USER_AGENT to avoid being blocked as a bot" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
+  <Config Name="Wget User Agent" Target="WGET_USER_AGENT" Default="" Mode="" Description="set a custom WGET_USER_AGENT to avoid being blocked as a bot" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
+  <Config Name="Chrome User Agent" Target="CHROME_USER_AGENT" Default="" Mode="" Description="set a custom CHROME_USER_AGENT to avoid being blocked as a bot" Type="Variable" Display="advanced-hide" Required="false" Mask="false"></Config>
 </Container>
