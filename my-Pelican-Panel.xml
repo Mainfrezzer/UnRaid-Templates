@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pelican-Panel</Name>
+  <Repository>ghcr.io/pelican-dev/panel:latest</Repository>
+  <Registry>https://ghcr.io/pelican-dev/panel</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Mainfrezzer/UnRaid-Templates/issues</Support>
+  <Project>https://github.com/pelican-dev/</Project>
+  <Overview>Pelican is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pelican runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.</Overview>
+  <Category>GameServers:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/my-Pelican-Panel.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1734038406</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Pelican Wings&#xD;
+&#xD;
+After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;
+</Requires>
+  <Config Name="WebHttp" Target="80" Default="80" Mode="tcp" Description="Port Http for the web serveur" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="WebHttps" Target="443" Default="443" Mode="tcp" Description="Port Https for the web serveur " Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Pelican-Data" Target="/pelican-data" Default="/mnt/user/appdata/pelican-panel/pelican-data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-data</Config>
+  <Config Name="Pelican-Logs" Target="/var/www/html/storage/logs" Default="/mnt/user/appdata/pelican-panel/pelican-log" Mode="rw" Description="All the logs of pterodactyl panel." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-log</Config>
+  <Config Name="App Url" Target="APP_URL" Default="http://localhost" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.5</Config>
+  <Config Name="Admin Email" Target="ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin@example.com</Config>
+  <Config Name="Caddy Reverse Proxy Workaround" Target="/etc/caddy/" Default="" Mode="rw" Description="This is only required if you run this behind a reverse proxy. If you dont, delete this mapping" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pelican-panel/etc/caddy/</Config>
+  <Config Name="Skip Caddy" Target="SKIP_CADDY" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">production</Config>
+  <Config Name="XDG" Target="XDG_DATA_HOME" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/pelican-data</Config>
+</Container>
