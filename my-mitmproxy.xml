@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mitmproxy</Name>
+  <Repository>mitmproxy/mitmproxy</Repository>
+  <Registry>https://hub.docker.com/r/mitmproxy/mitmproxy/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Mainfrezzer/UnRaid-Templates/issues</Support>
+  <Project>https://mitmproxy.org/</Project>
+  <Overview>Containerized version of mitmproxy&#x2060;: an interactive, SSL/TLS-capable intercepting proxy for HTTP/1, HTTP/2, and WebSockets.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8081]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/mitmproxy.png</Icon>
+  <ExtraParams/>
+  <PostArgs>mitmweb --web-host 0.0.0.0</PostArgs>
+  <CPUset/>
+  <DateInstalled>1734251641</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebProxyPort" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
+  <Config Name="WebUi" Target="8081" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
+  <Config Name="Wireguard" Target="51820" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">51820</Config>
+  <Config Name="Config" Target="/home/mitmproxy/.mitmproxy" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mitmproxy</Config>
+</Container>
