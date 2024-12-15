@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebProxyPort" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
+  <Config Name="WebProxyPort" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="WebUi" Target="8081" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
   <Config Name="Wireguard" Target="51820" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">51820</Config>
   <Config Name="Config" Target="/home/mitmproxy/.mitmproxy" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mitmproxy</Config>
