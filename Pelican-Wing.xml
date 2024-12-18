@@ -18,7 +18,7 @@
 See below in "Additional Requirements"</Overview>
   <Category>GameServers: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/my-Pelican-Wing.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/Pelican-Wing.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
   <ExtraParams/>
   <PostArgs/>

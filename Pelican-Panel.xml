@@ -12,7 +12,7 @@
   <Overview>Pelican is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pelican runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.</Overview>
   <Category>GameServers: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/my-Pelican-Panel.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/Pelican-Panel.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
   <ExtraParams/>
   <PostArgs/>
