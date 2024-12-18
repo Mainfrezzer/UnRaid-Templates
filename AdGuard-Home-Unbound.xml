@@ -22,7 +22,7 @@
   <DonateLink/>
   <Requires/>
   <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="/opt/adguardhome/work" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/workingdir</Config>
-  <Config Name=" Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/config</Config>
+  <Config Name="Config Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/config</Config>
   <Config Name="Install WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port of the Web UI for the first install" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="WebGUI" Target="80" Default="80" Mode="tcp" Description="Port of the WebGUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
   <Config Name="DNS Server TCP" Target="53" Default="53" Mode="tcp" Description="TCP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
