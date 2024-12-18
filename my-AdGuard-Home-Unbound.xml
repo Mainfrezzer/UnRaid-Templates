@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/my-AdGuard-Home-Unbound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/adguard.png</Icon>
-  <ExtraParams>--hostname=AdGuardHome</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1729104352</DateInstalled>
