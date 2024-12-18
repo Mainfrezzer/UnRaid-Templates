@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ArchiveBox</Name>
-  <Repository>archivebox/archivebox:latest</Repository>
-  <Registry>https://hub.docker.com/r/archivebox/archivebox</Registry>
+  <Repository>ghcr.io/archivebox/archivebox:latest</Repository>
+  <Registry>https://github.com/ArchiveBox/ArchiveBox/pkgs/container/archivebox</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
