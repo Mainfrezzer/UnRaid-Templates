@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
   <Project>https://github.com/roundcube/roundcubemail-docker</Project>
   <Overview>Roundcube Mail is an open-source webmail software that offers a user-friendly interface for managing email accounts. &#xD;
   It features a rich text editor, address book, and supports multiple email protocols, making it a popular choice for individuals and organizations seeking a customizable web-based email solution.&#xD;
