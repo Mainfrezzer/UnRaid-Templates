@@ -29,7 +29,7 @@ See below in "Additional Requirements"</Overview>
   <Requires>Pelican Panel&#xD;
 Needs the config.yml from the Pelican Panel Container. &#xD;
 &#xD;
-Once placed and started, stop the container again and edit the config.yml and their new entries.&#xD;
+Once placed in the **Pelican - Etc** folder and started, stop the container again and edit the config.yml and their new entries.&#xD;
 &#xD;
 **Especially the following**&#xD;
 1.&#xD;
