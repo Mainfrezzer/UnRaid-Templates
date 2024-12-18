@@ -16,7 +16,7 @@
 **!!!WARNING!!!** This is somewhat of a clusterf##k and needs a lot of manual configuration **!!!WARNING!!!** &#xD;
 &#xD;
 See below in "Additional Requirements"</Overview>
-  <Category>GameServers:</Category>
+  <Category>GameServers: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/my-Pelican-Wing.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
