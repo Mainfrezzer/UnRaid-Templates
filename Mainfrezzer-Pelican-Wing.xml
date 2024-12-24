@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mainfrezzer-Pelican-Wing</Name>
+  <Repository>mainfrezzer/pelican-wing:latest</Repository>
+  <Registry>https://hub.docker.com/r/mainfrezzer/pelican-wing</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/pelican-dev/</Project>
+  <Overview>A modified version of Pelican-Wing to work easier with UnRaid</Overview>
+  <Category>GameServers: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/Mainfrezzer-Pelican-Wing.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1734040237</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Pelican Panel&#xD;
+Needs the config.yml from the Pelican Panel Container. (its shown once you add a node) &#xD;
+the config.yml needs to be created where the **Pelican - Etc** is linked to. 
+</Requires>
+  <Config Name="WebHttp" Target="8080" Default="8080" Mode="tcp" Description="Http port for the web server" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="SFTP" Target="2022" Default="2022" Mode="tcp" Description="Sftp port for uploads to the gameservers" Type="Port" Display="always" Required="true" Mask="false">2022</Config>
+  <Config Name="Docker Sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Pelican - Etc" Target="/etc/pelican" Default="" Mode="rw" Description="For the config.yml" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-wing/etc/pelican</Config>
+  <Config Name="Pelican - Tmp" Target="/tmp/pelican/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/tmp/pelican/</Config>
+  <Config Name="Pelican Data" Target="/mnt/user/appdata/pelican-wing/data" Default="" Mode="rw" Description="Should match the UnRaid Host Mapping" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-wing/data</Config>
+  <Config Name="Wings_UID" Target="WINGS_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="Wings_GID" Target="WINGS_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="WINGS_USERNAME" Target="WINGS_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">nobody</Config>
+</Container>

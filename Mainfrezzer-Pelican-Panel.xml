@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mainfrezzer-Pelican-Panel</Name>
+  <Repository>mainfrezzer/pelican-panel:latest</Repository>
+  <Registry>https://hub.docker.com/r/mainfrezzer/pelican-panel</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/pelican-dev/</Project>
+  <Overview>A modified version of Pelican-Panel to work easier with UnRaid</Overview>
+  <Category>GameServers: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/Mainfrezzer-Pelican-Panel.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/pelican.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1734038406</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Mainfrezzer-Pelican Wing&#xD;
+&#xD;
+After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;
+</Requires>
+  <Config Name="WebHttp" Target="80" Default="80" Mode="tcp" Description="Http port for the web server, reverse proxy recommended!" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Pelican-Data" Target="/pelican-data" Default="/mnt/user/appdata/pelican-panel/pelican-data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-data</Config>
+  <Config Name="Pelican-Logs" Target="/var/www/html/storage/logs" Default="/mnt/user/appdata/pelican-panel/pelican-log" Mode="rw" Description="All the logs of pelican panel." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-log</Config>
+  <Config Name="App Url" Target="APP_URL" Default="http://localhost" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.5</Config>
+  <Config Name="Admin Email" Target="ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin@example.com</Config>
+  <Config Name="Skip Caddy" Target="SKIP_CADDY" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">production</Config>
+  <Config Name="XDG" Target="XDG_DATA_HOME" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/pelican-data</Config>
+</Container>
