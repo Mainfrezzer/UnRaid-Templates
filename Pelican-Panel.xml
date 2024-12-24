@@ -20,14 +20,7 @@
   <DateInstalled>1734038406</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Pelican Wings&#xD;
-&#xD;
-After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;
-&#xD;
-&#xD;
-Depending on if youre running this behind a reverse proxy, there might be additional steps to be taken.&#xD;
-Below is a **Caddy Workaround** mapping which is only needed if you do use a reverse proxy.&#xD;
-This would be the Caddyfile for this usecase https://github.com/Mainfrezzer/UnRaid-Templates/blob/main/additions/pelican-panel/etc/caddy/Caddyfile&#xD;
+  <Requires>Pelican Wings&#xD;&#xD;After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;&#xD;&#xD;Depending on if youre running this behind a reverse proxy, there might be additional steps to be taken.&#xD;Below is a **Caddy Workaround** mapping which is only needed if you do use a reverse proxy.&#xD;This would be the Caddyfile for this usecase https://github.com/Mainfrezzer/UnRaid-Templates/blob/main/additions/pelican-panel/etc/caddy/Caddyfile&#xD;
 </Requires>
   <Config Name="WebHttp" Target="80" Default="80" Mode="tcp" Description="Http port for the web server" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="WebHttps" Target="443" Default="443" Mode="tcp" Description="Https port for the web server " Type="Port" Display="always" Required="true" Mask="false">443</Config>

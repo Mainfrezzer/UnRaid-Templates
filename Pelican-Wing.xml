@@ -26,21 +26,7 @@ See below in "Additional Requirements"</Overview>
   <DateInstalled>1734040237</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Pelican Panel&#xD;
-Needs the config.yml from the Pelican Panel Container. &#xD;
-&#xD;
-Once placed in the **Pelican - Etc** folder and started, stop the container again and edit the config.yml and their new entries.&#xD;
-&#xD;
-**Especially the following**&#xD;
-1.&#xD;
-The line under system:&#xD;
-data: needs to point towards the real unraid mount, below labeled as Pelican - Data /mnt/user/appdata/pelican-wing/data&#xD;
-&#xD;
-2.&#xD;
-The line under system:&#xD;
-passwd_file: cange it to /etc/passwd&#xD;
-&#xD;
-now start the container up and the wing should work flawlessly on UnRaid.</Requires>
+  <Requires>Pelican Panel&#xD;Needs the config.yml from the Pelican Panel Container. &#xD;&#xD;Once placed in the **Pelican - Etc** folder and started, stop the container again and edit the config.yml and their new entries.&#xD;&#xD;**Especially the following**&#xD;1.&#xD;The line under system:&#xD;data: needs to point towards the real unraid mount, below labeled as Pelican - Data /mnt/user/appdata/pelican-wing/data&#xD;&#xD;2.&#xD;The line under system:&#xD;passwd_file: cange it to /etc/passwd&#xD;&#xD;now start the container up and the wing should work flawlessly on UnRaid.</Requires>
   <Config Name="WebHttp" Target="8080" Default="8080" Mode="tcp" Description="Http port for the web server" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="SFTP" Target="2022" Default="2022" Mode="tcp" Description="Sftp port for uploads to the gameservers" Type="Port" Display="always" Required="true" Mask="false">2022</Config>
   <Config Name="Docker Sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>

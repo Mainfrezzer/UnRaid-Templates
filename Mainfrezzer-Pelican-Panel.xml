@@ -20,10 +20,7 @@
   <DateInstalled>1734038406</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Mainfrezzer-Pelican Wing&#xD;
-&#xD;
-After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;
-</Requires>
+  <Requires>Mainfrezzer-Pelican Wing&#xD;&#xD;After your first run, visit the panel with /installer to complete the install and setup the administrator&#xD;</Requires>
   <Config Name="WebHttp" Target="80" Default="80" Mode="tcp" Description="Http port for the web server, reverse proxy recommended!" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="Pelican-Data" Target="/pelican-data" Default="/mnt/user/appdata/pelican-panel/pelican-data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-data</Config>
   <Config Name="Pelican-Logs" Target="/var/www/html/storage/logs" Default="/mnt/user/appdata/pelican-panel/pelican-log" Mode="rw" Description="All the logs of pelican panel." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pelican-panel/pelican-log</Config>
