@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Mainfrezzer-Pelican-Wing</Name>
-  <Repository>mainfrezzer/pelican-wing:latest</Repository>
+  <Repository>ghcr.io/mainfrezzer/pelican-wing:latest</Repository>
   <Registry>https://hub.docker.com/r/mainfrezzer/pelican-wing</Registry>
   <Network>bridge</Network>
   <MyIP/>
