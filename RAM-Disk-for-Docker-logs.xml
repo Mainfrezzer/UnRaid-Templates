@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/mainfrezzer/unRAID-RAM-Disk/main/plugin/RAM-DISK-Dockerlog.plg</PluginURL>
+<PluginAuthor>Mainfrezzer</PluginAuthor>
+<Name>RAM-Disk for Docker logs</Name>
+<IconFA>microchip</IconFA>
+<Description>The Plugin aims to reduce the wear on your SSD by moving the docker status and log files into your RAM.
+</Description>
+<Category>Tools: Tools:System Plugins:</Category>
+<MinVer>6.12.10</MinVer>
+<Support>https://forums.unraid.net/topic/185193-plugin-ram-disk-for-docker-logs/</Support>
+</Containers>
