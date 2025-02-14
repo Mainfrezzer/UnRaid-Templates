@@ -8,6 +8,5 @@
 <Description>The Plugin aims to reduce the wear on your SSD by moving the docker status and log files into your RAM.
 </Description>
 <Category>Tools: Tools:System Plugins:</Category>
-<MinVer>6.12.10</MinVer>
 <Support>https://forums.unraid.net/topic/185193-plugin-ram-disk-for-docker-logs/</Support>
 </Containers>
