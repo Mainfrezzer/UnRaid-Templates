@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Mainfrezzer-Pelican-Wing</Name>
   <Repository>ghcr.io/mainfrezzer/pelican-wing:latest</Repository>
-  <Registry>https://hub.docker.com/r/mainfrezzer/pelican-wing</Registry>
+  <Registry>https://github.com/Mainfrezzer/Mainfrezzer-Pelican-Wing/pkgs/container/pelican-wing</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>

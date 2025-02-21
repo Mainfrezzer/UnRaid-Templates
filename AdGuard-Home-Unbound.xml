@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>AdGuard-Home-Unbound</Name>
   <Repository>ghcr.io/mainfrezzer/adguardhome</Repository>
-  <Registry>https://hub.docker.com/r/mainfrezzer/adguardhome</Registry>
+  <Registry>https://github.com/Mainfrezzer/adguardhome-unbound/pkgs/container/adguardhome</Registry>
   <Network>br0</Network>
   <MyIP>192.168.1.3</MyIP>
   <Shell>sh</Shell>

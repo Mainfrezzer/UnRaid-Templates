@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Mainfrezzer-Pelican-Panel</Name>
   <Repository>ghcr.io/mainfrezzer/pelican-panel:latest</Repository>
-  <Registry>https://hub.docker.com/r/mainfrezzer/pelican-panel</Registry>
+  <Registry>https://github.com/Mainfrezzer/Mainfrezzer-Pelican-Panel/pkgs/container/pelican-panel</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
