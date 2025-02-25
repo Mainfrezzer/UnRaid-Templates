@@ -26,6 +26,7 @@
   <Config Name="Preconfigure" Target="PROVIDE_CONFIG" Default="no|yes" Description="Should the container provide a preconfigured AdGuard Home config? Login would be admin and adguardhome as password" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
   <Config Name="Install WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port of the Web UI for the first install" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="WebGUI" Target="80" Default="80" Mode="tcp" Description="Port of the WebGUI" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="Enable DNSSEC" Target="DNSSEC_ENABLE" Default="0|1" Mode="" Description="If enabled (1) creates the root.key upon startup" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="DNS Server TCP" Target="53" Default="53" Mode="tcp" Description="TCP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
   <Config Name="DNS Server UDP" Target="53" Default="53" Mode="udp" Description="UDP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
 </Container>
