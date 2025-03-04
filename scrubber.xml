@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/mainfrezzer/unraid-scrubber/master/scrubber.plg</PluginURL>
+<PluginAuthor>Mainfrezzer</PluginAuthor>
+<Name>BTRFS Scrubber</Name>
+<License>LGPL-2.1</License>
+<IconFA>stethoscope</IconFA>
+<Description>This plugin performs a scrub on your BTRFS pools after an unclean shutdown.
+</Description>
+<MinVer>7.0.0</MinVer>
+<Category>Tools: Tools:System Plugins:</Category>
+<Support>https://github.com/Mainfrezzer/unraid-scrubber</Support>
+</Containers>
