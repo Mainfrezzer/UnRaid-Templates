@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mainfrezzer-wireguard-client</Name>
+  <Repository>ghcr.io/mainfrezzer/wg-bridge:latest</Repository>
+  <Registry>ghcr.io/mainfrezzer/wg-bridge</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/Mainfrezzer/wireguard-bridge</Project>
+  <Overview>Allows you to connect your containers to a dual-stack or even ipv6 only wireguard server. Comes with Privoxy as http proxy (https://www.privoxy.org/) and mircosocks as socks5 proxy (https://github.com/rofl0r/microsocks)</Overview>
+  <Category>Network:Proxy Network:VPN Network:Privacy Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/wireguard.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN  --sysctl net.ipv4.conf.all.src_valid_mark=1</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Wireguard Config" Target="/etc/wireguard/" Default="" Mode="rw" Description="Location to place your wg0.conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wg-bridge</Config>
+  <Config Name="Socks5" Target="1080" Default="1080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1080</Config>
+  <Config Name="Http Proxy" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Lan Network" Target="LAN_NETWORK" Default="192.168.2.0/24" Mode="" Description="Set you ipv4 LAN network in CIDR format.&#13;&#10;&#13;&#10;Only needed if you want to reach something attached to this container and vice versa" Type="Variable" Display="always" Required="true" Mask="false">192.168.2.0/24</Config>
+  <Config Name="Lan IPV6 Network" Target="LAN_NETWORK6" Default="fd00::/64" Mode="" Description="Set your ipv6 LAN network in CIDR format. ULA or GUA.&#13;&#10;&#13;&#10;Only needed if you want to reach something attached to this container and vice versa" Type="Variable" Display="always" Required="true" Mask="false">fd00::/64</Config>
+  <TailscaleStateDir/>
+</Container>
