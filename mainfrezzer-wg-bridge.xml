@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>mainfrezzer-wireguard-client</Name>
   <Repository>ghcr.io/mainfrezzer/wg-bridge:latest</Repository>
-  <Registry>ghcr.io/mainfrezzer/wg-bridge</Registry>
+  <Registry>https://ghcr.io/mainfrezzer/wg-bridge</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
