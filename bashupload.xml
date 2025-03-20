@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bashupload</Name>
+  <Repository>ghcr.io/mainfrezzer/bashupload:latest</Repository>
+  <Registry>https://github.com/Mainfrezzer/docker-bashupload/pkgs/container/bashupload</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/IO-Technologies/bashupload</Project>
+  <Overview>A containerized selfhost version of https://bashupload.com/&#xD;
+&#xD;
+PHP/JavaScript file upload web app to upload files from command line &amp;amp; browser, and download them elsewhere. Frequently used to upload/download files on servers.&#xD;
+&#xD;
+(If someone has a better Icon for it, please let me know. Im very skilled at design, as you can clearly see)
+  </Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/bashup.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="App Location" Target="/app" Default="/mnt/user/appdata/bashupload" Mode="rw" Description="Location for the installed app alongside the configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bashupload</Config>
+  <Config Name="Filestorage" Target="/app/files" Default="/mnt/user/bashupload" Mode="rw" Description="Storage location for all uploaded files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/bashupload</Config>
+  <Config Name="Upload size" Target="UPLOADSIZE" Default="128M" Mode="" Description="Use 128M, 512M, 1G or 10G to set the size." Type="Variable" Display="always" Required="true" Mask="false">512M</Config>
+  <Config Name="Webserver" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5465</Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
