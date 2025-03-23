@@ -19,7 +19,7 @@ PHP/JavaScript file upload web app to upload files from command line &amp;amp; b
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/bashup.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>-m 1G</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DonateText/>
