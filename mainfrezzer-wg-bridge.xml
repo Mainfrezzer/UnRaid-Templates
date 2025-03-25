@@ -10,7 +10,7 @@
   <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
   <Project>https://github.com/Mainfrezzer/wireguard-bridge</Project>
   <Overview>Allows you to connect your containers to a dual-stack or even ipv6 only wireguard server. Comes with Privoxy as http proxy (https://www.privoxy.org/) and mircosocks as socks5 proxy (https://github.com/rofl0r/microsocks)</Overview>
-  <Category>Network:Proxy Network:VPN Network:Privacy Status:Beta</Category>
+  <Category>Network:Proxy Network:VPN Network:Privacy Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/icon/wireguard.png</Icon>
