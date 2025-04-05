@@ -29,4 +29,6 @@
   <Config Name="Skip Caddy" Target="SKIP_CADDY" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
   <Config Name="APP_ENV" Target="APP_ENV" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">production</Config>
   <Config Name="XDG" Target="XDG_DATA_HOME" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/pelican-data</Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="This does nothing, its only for unraid to create the folders with the correct owner" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="This does nothing, its only for unraid to create the folders with the correct owner" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
 </Container>
