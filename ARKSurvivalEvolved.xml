@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ARKSurvivalEvolved</Name>
+  <Repository>ghcr.io/mainfrezzer/ase-docker</Repository>
+  <Registry>https://github.com/Mainfrezzer/ase-docker/pkgs/container/ase-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://survivetheark.com/</Project>
+  <Overview>This Docker will download and install SteamCMD. It will also install ARK:SurvivalEvolved and run it (Normal server startup of ARK can take a long time!).&#xD;
+&#xD;
+**WARNING:** You have to set the value vm.max_map_count to at least 256000 on the host as root with the command:  &#xD;
+`echo 265000 &amp;gt; /proc/sys/vm/max_map_count`&#xD;
+To make that value persistent on Unraid please use a User Script that runs on startup or with the command from above or put it in your `go` file.&#xD;
+&#xD;
+ATTENTION: First Startup can take very long since it downloads the gameserver files!&#xD;
+&#xD;
+Update Notice: Simply restart the container if a newer version of the game is available.&#xD;
+&#xD;
+You can also run multiple servers with only one SteamCMD directory!</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL>false</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/arkse.png</Icon>
+  <ExtraParams>--ulimit nofile=2048:65530 --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>If you like Ich777 work please </DonateText>
+  <DonateLink>https://www.paypal.me/chips777</DonateLink>
+  <Requires/>
+  <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="Container Path: /serverdata/steamcmd" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/steamcmd</Config>
+  <Config Name="ServerFiles" Target="/serverdata/serverfiles" Default="" Mode="rw" Description="Container Path: /serverdata/serverfiles" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ark-se</Config>
+  <Config Name="GAME_ID" Target="GAME_ID" Default="" Mode="" Description="The GAME_ID that the container download at startup.&#13;&#10;If you want to install a static or beta version of the game change the value to: '376030 -beta YOURBRANCH' (without quotes, replace YOURBRANCH with the branch or version you want to install)." Type="Variable" Display="always" Required="true" Mask="false">376030</Config>
+  <Config Name="Validate Installation" Target="VALIDATE" Default="" Mode="" Description="Set the Variable to 'true' if you want to validate the installation otherwise leave it blank." Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="UDP 1" Target="7777" Default="" Mode="udp" Description="UDP Gameport (if you need another port, please delete this entry and create a new UDP Port with the required port number, also don't forget to click an 'Show more settings ...' and change the port number" Type="Port" Display="always" Required="false" Mask="false">7777</Config>
+  <Config Name="UDP 2" Target="7778" Default="" Mode="udp" Description="Container Port: 7778" Type="Port" Display="always" Required="false" Mask="false">7778</Config>
+  <Config Name="UDP Steam" Target="27015" Default="" Mode="udp" Description="Container Port: 27015" Type="Port" Display="always" Required="false" Mask="false">27015</Config>
+  <Config Name="RCON TCP" Target="27020" Default="" Mode="tcp" Description="Container Port: 27020" Type="Port" Display="always" Required="false" Mask="false">27020</Config>
+  <Config Name="Map" Target="MAP" Default="TheIsland" Mode="" Description="Container Variable: MAP" Type="Variable" Display="always-hide" Required="true" Mask="false">TheIsland</Config>
+  <Config Name="Server Name" Target="SERVER_NAME" Default="" Mode="" Description="This field accepts no spaces" Type="Variable" Display="always-hide" Required="true" Mask="false">ASE Docker</Config>
+  <Config Name="Server Password" Target="SRV_PWD" Default="" Mode="" Description="This field accepts no spaces" Type="Variable" Display="always-hide" Required="true" Mask="false">Docker</Config>
+  <Config Name="Server Admin Password" Target="SRV_ADMIN_PWD" Default="" Mode="" Description="This field accepts no spaces" Type="Variable" Display="always-hide" Required="true" Mask="false">adminDocker</Config>
+  <Config Name="Game Parameters" Target="GAME_PARAMS" Default="" Mode="" Description="Enter your game parameters seperated with ? and start with a ? (don't put spaces in between eg: ?MaxPlayers=40?FastDecayUnsnappedCoreStructures=true)" Type="Variable" Display="always-hide" Required="false" Mask="false">?Port=7777?QueryPort=27015?MaxPlayers=50?RCONEnabled=True?RCONPort=27020</Config>
+  <Config Name="Extra Game Parameters" Target="GAME_PARAMS_EXTRA" Default="" Mode="" Description="Type in your Extra Game Parameters seperated with a space and - (eg: -DisableDeathSpectator -UseBattlEye)" Type="Variable" Display="always-hide" Required="true" Mask="false">-server -log</Config>
+  <Config Name="Steam-Username" Target="USERNAME" Default="" Mode="" Description="Your Steam username goes here if you want to install a game that needs a valid account, otherwise leave it blank (ATTENTION: You have to disable Steam Guard)." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Steam-Password" Target="PASSWRD" Default="" Mode="" Description="Your Steam password goes here if you want to install a game that needs a valid account, otherwise leave it blank (ATTENTION: You have to disable Steam Guard)." Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="Container Variable: UID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="Container Variable: GID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
