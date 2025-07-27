@@ -25,6 +25,5 @@
   <Config Name="Http Proxy" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Lan Network" Target="LAN_NETWORK" Default="192.168.2.0/24" Mode="" Description="Set you ipv4 LAN network in CIDR format.&#13;&#10;&#13;&#10;Only needed if you want to reach something attached to this container and vice versa" Type="Variable" Display="always" Required="true" Mask="false">192.168.2.0/24</Config>
   <Config Name="Lan IPV6 Network" Target="LAN_NETWORK6" Default="fd00::/64" Mode="" Description="Set your ipv6 LAN network in CIDR format. ULA or GUA.&#13;&#10;&#13;&#10;Only needed if you want to reach something attached to this container and vice versa" Type="Variable" Display="always" Required="true" Mask="false">fd00::/64</Config>
-  <Config Name="TailScale Fallback State Directory" Target="CA_TS_FALLBACK_DIR" Default="/etc/wireguard/" Mode="{3}" Description="Fallback container directory for tailscale state information - Added By Community Applications" Type="Variable" Display="advanced" Required="{7}" Mask="{8}">/etc/wireguard/</Config>
   <TailscaleStateDir/>
 </Container>
