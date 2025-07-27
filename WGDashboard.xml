@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WGDashboard</Name>
+  <Repository>donaldzou/wgdashboard:latest</Repository>
+  <Registry>https://github.com/donaldzou/WGDashboard/pkgs/container/wgdashboard</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/donaldzou/WGDashboard</Project>
+  <Overview>WGDashboard is a docker container that lets you deploy amnezia and wireguard server over a webinterface. &#xD;
+&#xD;
+https://github.com/donaldzou/WGDashboard&#xD;
+&#xD;
+&#xD;
+If you have ipv6, dont forget to add "--sysctl net.ipv6.conf.all.forwarding=1" to the extra parameters</Overview>
+  <Category>Network:VPN</Category>
+  <WebUI>http://[IP]:[PORT:10086]</WebUI>
+  <TemplateURL/>
+  <Icon>https://camo.githubusercontent.com/320385e18df68e18bde00bec3b27e3c6cf5a7724110e9acc96b6cd2c0c952a32/68747470733a2f2f776764617368626f6172642d7265736f75726365732e746f72312e63646e2e6469676974616c6f6365616e7370616365732e636f6d2f4c6f676f732f4c6f676f2d322d526f756e6465642d353132783531322e706e67</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --sysctl net.ipv4.conf.all.src_valid_mark=1</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="10086" Default="10086" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">10086</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/WGDashboard/data</Config>
+  <Config Name="Wireguard/Amnezia Port" Target="51820" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">51820</Config>
+  <Config Name="Amnezia-Server-Config" Target="/etc/amnezia/amneziawg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/WGDashboard/amneziawg</Config>
+  <Config Name="Wireguard-Server-Config" Target="/etc/wireguard" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/WGDashboard/wireguard</Config>
+  <TailscaleStateDir/>
+</Container>
