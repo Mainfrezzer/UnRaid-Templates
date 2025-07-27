@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Copyparty</Name>
+  <Repository>ghcr.io/9001/copyparty-ac</Repository>
+  <Registry>https://github.com/9001/copyparty/pkgs/container/copyparty-ac</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/182778-support-mainfrezzer-docker-repo/</Support>
+  <Project>https://github.com/9001/copyparty</Project>
+  <Overview>### &#x1F4BE;&#x1F389; copyparty&#xD;
+&#xD;
+turn almost any device into a file server with resumable uploads/downloads using *any* (https://github.com/9001/copyparty/blob/hovudstraum/README.md#browser-support) web browser&#xD;
+&#xD;
+A full list of the feature set can be found here https://github.com/9001/copyparty/blob/hovudstraum/README.md#features</Overview>
+  <Category>Productivity: Tools: MediaApp:Video MediaApp:Music MediaApp:Books MediaApp:Photos MediaApp:Other Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:3923]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/refs/heads/main/icon/copyparty.png</Icon>
+  <ExtraParams>--user=99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>The server needs a .conf file or arguments to run, an example configuation can be found here: https://github.com/9001/copyparty/blob/hovudstraum/docs/example.conf</Requires>
+  <Config Name="Config" Target="/cfg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/copyparty</Config>
+  <Config Name="Storage" Target="/w" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SHARE</Config>
+  <Config Name="WebGui" Target="3923" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3923</Config>
+  <TailscaleStateDir/>
+</Container>
