@@ -18,7 +18,7 @@ If you have ipv6, dont forget to add "--sysctl net.ipv6.conf.all.forwarding=1" t
   <Category>Network:VPN</Category>
   <WebUI>http://[IP]:[PORT:10086]</WebUI>
   <TemplateURL/>
-  <Icon>https://camo.githubusercontent.com/320385e18df68e18bde00bec3b27e3c6cf5a7724110e9acc96b6cd2c0c952a32/68747470733a2f2f776764617368626f6172642d7265736f75726365732e746f72312e63646e2e6469676974616c6f6365616e7370616365732e636f6d2f4c6f676f732f4c6f676f2d322d526f756e6465642d353132783531322e706e67</Icon>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/refs/heads/main/icon/WGDashboard.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --sysctl net.ipv4.conf.all.src_valid_mark=1</ExtraParams>
   <PostArgs/>
   <CPUset/>
