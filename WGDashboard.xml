@@ -30,5 +30,6 @@ If you have ipv6, dont forget to add "--sysctl net.ipv6.conf.all.forwarding=1" t
   <Config Name="Wireguard/Amnezia Port" Target="51820" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">51820</Config>
   <Config Name="Amnezia-Server-Config" Target="/etc/amnezia/amneziawg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/WGDashboard/amneziawg</Config>
   <Config Name="Wireguard-Server-Config" Target="/etc/wireguard" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/WGDashboard/wireguard</Config>
+  <Config Name="DNS Servers" Target="global_dns" Default="9.9.9.9, 2620:fe::fe, 8.8.8.8, 2001:4860:4860::8888, 1.1.1.1, 2606:4700:4700::1111" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">9.9.9.9, 2620:fe::fe, 8.8.8.8, 2001:4860:4860::8888, 1.1.1.1, 2606:4700:4700::1111</Config>
   <TailscaleStateDir/>
 </Container>
