@@ -14,7 +14,7 @@
 turn almost any device into a file server with resumable uploads/downloads using *any* (https://github.com/9001/copyparty/blob/hovudstraum/README.md#browser-support) web browser&#xD;
 &#xD;
 A full list of the feature set can be found here https://github.com/9001/copyparty/blob/hovudstraum/README.md#features</Overview>
-  <Category>Productivity: Tools: MediaApp:Video MediaApp:Music MediaApp:Books MediaApp:Photos MediaApp:Other Network:Web Network:FTP</Category>
+  <Category>Productivity: Tools:Utilities MediaApp:Video MediaApp:Music MediaApp:Books MediaApp:Photos MediaApp:Other Network:Web Network:FTP</Category>
   <WebUI>http://[IP]:[PORT:3923]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/refs/heads/main/icon/copyparty.png</Icon>
@@ -23,7 +23,9 @@ A full list of the feature set can be found here https://github.com/9001/copypar
   <CPUset/>
   <DonateText/>
   <DonateLink/>
-  <Requires>The server needs a .conf file or arguments to run, an example configuation can be found here: https://github.com/9001/copyparty/blob/hovudstraum/docs/example.conf</Requires>
+  <Requires>The server needs a .conf file or arguments to run, a basic docker config can be found here https://github.com/9001/copyparty/blob/hovudstraum/docs/examples/docker/basic-docker-compose/copyparty.conf&#xD;
+&#xD;
+An extensive example configuation can be found here: https://github.com/9001/copyparty/blob/hovudstraum/docs/example.conf</Requires>
   <Config Name="Config" Target="/cfg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/copyparty</Config>
   <Config Name="Storage" Target="/w" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SHARE</Config>
   <Config Name="WebGui" Target="3923" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3923</Config>
