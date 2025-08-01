@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
 <Plugin>True</Plugin>
-<PluginURL>https://raw.githubusercontent.com/Mainfrezzer/unRAID-WOL/refs/heads/master/plugin/m-wakeonlan.plg</PluginURL>
+<PluginURL>https://raw.githubusercontent.com/Mainfrezzer/unRAID-WOL/master/plugin/m-wakeonlan.plg</PluginURL>
 <PluginAuthor>Mainfrezzer</PluginAuthor>
 <Category>Tools:System</Category>
 <Name>Wake On Lan</Name>
