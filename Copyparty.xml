@@ -27,6 +27,7 @@ A full list of the feature set can be found here https://github.com/9001/copypar
 &#xD;
 An extensive example configuation can be found here: https://github.com/9001/copyparty/blob/hovudstraum/docs/example.conf</Requires>
   <Config Name="Config" Target="/cfg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/copyparty</Config>
+  <Config Name="'Temporary' Data (Salts, Session DB, Share DB)" Target="/tmp/copyparty" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/copyparty/tmp</Config>
   <Config Name="Storage" Target="/w" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SHARE</Config>
   <Config Name="WebGui" Target="3923" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3923</Config>
   <TailscaleStateDir/>
