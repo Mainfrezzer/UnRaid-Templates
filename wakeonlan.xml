@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/Mainfrezzer/unRAID-WOL/refs/heads/master/plugin/m-wakeonlan.plg</PluginURL>
+<PluginAuthor>Mainfrezzer</PluginAuthor>
+<Category>Tools:System</Category>
+<Name>Wake On Lan</Name>
+<Description>
+Wake On Lan plugin allows you to scan your network, add and save computers from your network. Then wake them.
+</Description>
+<Support>http://lime-technology.com/forum/index.php?topic=38289.0</Support>
+<Icon>https://raw.githubusercontent.com/Mainfrezzer/unRAID-WOL/refs/heads/master/plugin/wakeonlan.png</Icon>
+</Containers>
