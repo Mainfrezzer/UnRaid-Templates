@@ -12,7 +12,7 @@
   <Overview>Allows you to connect your containers to a dual-stack or even ipv6 only amnezia server. Comes with Privoxy as http proxy (https://www.privoxy.org/) and mircosocks as socks5 proxy (https://github.com/rofl0r/microsocks)</Overview>
   <Category>Network:Proxy Network:VPN Network:Privacy Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates//master/mainfrezzer-amnezia-bridge.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/master/mainfrezzer-amnezia-bridge.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/refs/heads/main/icon/amnezia.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --sysctl net.ipv4.conf.all.src_valid_mark=1</ExtraParams>
   <PostArgs/>
