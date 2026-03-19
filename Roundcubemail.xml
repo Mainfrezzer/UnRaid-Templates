@@ -15,7 +15,7 @@
   <Category>Tools: Other: Network:Messenger Network:Other</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/main/Roundcubemail.xml</TemplateURL>
-  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Roundcube_logo_icon.svg/240px-Roundcube_logo_icon.svg.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Mainfrezzer/UnRaid-Templates/refs/heads/main/icon/roundcube.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
