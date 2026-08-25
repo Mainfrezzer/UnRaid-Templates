@@ -4,6 +4,7 @@
 <PluginURL>https://raw.githubusercontent.com/Mainfrezzer/unRAID-WOL/master/plugin/m-wakeonlan.plg</PluginURL>
 <PluginAuthor>Mainfrezzer</PluginAuthor>
 <Category>Tools:System</Category>
+<ExtraSearchTerms>wol</ExtraSearchTerms>
 <Name>Wake On Lan</Name>
 <Description>
 Wake On Lan plugin allows you to scan your network, add and save computers from your network. Then wake them.
