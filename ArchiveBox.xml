@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires>To setup an admin account, you have to open the console and type "su archivebox" and then "archivebox manage createsuperuser". It asks you then for the admin account name, email and password.</Requires>
-  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="WebUI" Target="5797" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5797</Config>
   <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Contains the DB and logfiles" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ArchiveBox</Config>
   <Config Name="Archive Data" Target="/data/archive" Default="" Mode="rw" Description="Contains all the data thats being archived." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SHARE/ArchiveBox</Config>
   <Config Name="Public Index" Target="PUBLIC_INDEX" Default="" Mode="" Description="set to False to prevent anonymous users from viewing snapshot list" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
